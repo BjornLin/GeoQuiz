@@ -17,7 +17,7 @@ public class QuizActivity extends AppCompatActivity {
 
     private Button mTrueButton;
     private Button mFalseButton;
-    private ImageButton mNextButton;
+    private View mNextButton;
     private ImageButton mPrevButton;
 
     private TextView mQuestionTextView;
@@ -71,7 +71,7 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
-        mNextButton = (ImageButton) findViewById(R.id.next_button);
+        mNextButton = (View) findViewById(R.id.next_button);
         mNextButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
